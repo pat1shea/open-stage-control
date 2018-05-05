@@ -44,6 +44,11 @@ html{
 
     // prevent android's auto font-resize
     max-height: 999999px;
+
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
 }
 
 body {
