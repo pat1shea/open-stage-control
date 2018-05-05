@@ -1010,7 +1010,12 @@
 <ul>
 <li>type: <code>string|array</code></li>
 <li>default: <code>empty</code></li>
-<li>usage: widgets sharing the same <code>linkId</code> update each other's value(s) AND send their respective osc messages.</li>
+<li>usage:<ul>
+<li>widgets sharing the same <code>linkId</code> update each other's value(s) AND send their respective osc messages.</li>
+<li>when prefixed with <code>&gt;&gt;</code>, the linkId will make the widget act as a master (sending but not receiving)</li>
+<li>when prefixed with <code>&lt;&lt;</code>, the linkId will make the widget act as a slave (receiving but not sending)</li>
+</ul>
+</li>
 </ul>
 <h2 id="style">Style<a class="headerlink" href="#style" title="Permanent link">&para;</a></h2>
 <h3 id="label"><code>label</code><i class="dynamic-prop-icon" title="dynamic"></i><a class="headerlink" href="#label" title="Permanent link">&para;</a></h3>
@@ -1077,16 +1082,17 @@
 </ul>
 <h3 id="target"><code>target</code><i class="dynamic-prop-icon" title="dynamic"></i><a class="headerlink" href="#target" title="Permanent link">&para;</a></h3>
 <ul>
-<li>type: <code>array</code></li>
+<li>type: <code>array|string</code></li>
 <li>default: <code>[]</code></li>
 <li>usage:<ul>
 <li>this defines the targets of the widget's osc messages</li>
 <li>each element of the <code>array</code> must be a string formatted as follows : <code>&quot;ip:port&quot;</code></li>
 <li>multiple targets can be specified : <code>[&quot;ip1:port1&quot;,&quot;ip2:port2&quot;]</code></li>
+<li>a single target can be set : <code>ip:port</code></li>
 <li>if <a href="../../extras/midi/"><code>midi</code></a> is enabled, targets can be <code>&quot;midi:device_name&quot;</code></li>
 <li>special item <code>&quot;self&quot;</code> can be used to refer to the emitting client directly</li>
 <li>if no target is set (empty array <code>[]</code>), messages can still be sent if the server has defaults targets (<code>-s / --send</code>)</li>
-<li>to disable osc regardless of the previous point, set <code>target</code> to <code>[null]</code></li>
+<li>to disable the default global osc targets (set via the app's <code>--send</code> option), set one of the array's item as <code>null</code> (unquoted).</li>
 </ul>
 </li>
 </ul>
@@ -1106,11 +1112,12 @@
 </ul>
 <h3 id="preargs"><code>preArgs</code><i class="dynamic-prop-icon" title="dynamic"></i><a class="headerlink" href="#preargs" title="Permanent link">&para;</a></h3>
 <ul>
-<li>type: <code>array</code></li>
+<li>type: <code>array|*</code></li>
 <li>default: <code>[]</code></li>
 <li>usage:<ul>
 <li>each element of the <code>array</code> defines a constant value that will be prepended to the osc message</li>
 <li>values can be defined as objects if the osc data type needs to be specified (ie different from the default implied by the <code>precision</code> option)</li>
+<li>a single non-array value can be set</li>
 </ul>
 </li>
 <li>example:
