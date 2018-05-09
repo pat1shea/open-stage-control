@@ -2,7 +2,7 @@
   "name": "open-stage-control",
   "productName": "Open Stage Control",
   "description": "Libre and modular OSC / MIDI controller",
-  "version": "0.30.0",
+  "version": "0.30.3",
   "author": {
     "name": "Jean-Emmanuel Doucet",
     "email": "jean-emmanuel@ammd.net"
@@ -25,7 +25,7 @@
     "chokidar": "2.0.3",
     "electron-localshortcut": "3.1.0",
     "express": "4.16.3",
-    "osc": "2.2.0",
+    "osc": "2.2.1",
     "python-shell": "0.5.0",
     "rtsp-ffmpeg": "0.0.12",
     "vmodule": "1.0.1",
