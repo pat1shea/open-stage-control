@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Open Stage Control\n\n\nLibre and modular OSC / MIDI controller\n\n\nOpen Stage Control is a desktop OSC bi-directionnal control surface application. It's built on web technologies and run as an \nElectron\n web server that accepts any number of clients.\n\n\nTry the online demo (Chrome 50+ required)\n\n\nDownload the latest release\n\n\n\n\nSupported platforms\n\n\nThe server can run on all \nplatforms supported by Electron\n. Clients just need to connect to the server with a compatible browser :\n\n\n\n\nany system running Chrome/Chromium version \n50\n or later (Linux, MacOS, Windows, Android, etc)\n\n\niOS version \n9.3\n or later\n\n\n\n\nFirefox is \nnot\n supported.\n\n\nNeed help ? Found a bug ?\n\n\nHead over the \nissue tracker\n :)\n\n\nFree what ?\n\n\nOpen Stage Control is a \nfree software\n, as in \ngratis\n and \u2014 most importantly \u2014 \nlibre\n. It always will be. If you want to support the project financially, consider using flattr :\n\n\nhttps://flattr.com/@jean-emmanuel\n\n\n\n\nTable of contents\n\n\n\n\nGetting started\n\n\nUser interface\n\n\nEditing sessions\n\n\nWidgets reference:\n\n\nWidget properties\n\n\nContainers\n\n\nSliders\n\n\nPads\n\n\nButtons\n\n\nSwitchers\n\n\nPlots\n\n\nMatrices\n\n\nInputs\n\n\nMaths\n\n\n\n\n\n\nExtras:\n\n\nAdvanced property syntax\n\n\nCSS Tips\n\n\nTheming\n\n\nURL options\n\n\nRemote control\n\n\nCustom module\n\n\nMidi\n\n\n\n\n\n\nExamples\n\n\nCredits", 
+            "text": "Open Stage Control\n\n\nLibre and modular OSC / MIDI controller\n\n\nOpen Stage Control is a desktop OSC bi-directionnal control surface application. It's built on web technologies and run as an \nElectron\n web server that accepts any number of clients.\n\n\nTry the online demo (Chrome 50+ required)\n\n\nDownload the latest release\n\n\n\n\nSupported platforms\n\n\nThe server can run on all \nplatforms supported by Electron\n. Clients just need to connect to the server with a compatible browser :\n\n\n\n\nany system running Chrome/Chromium version \n50\n or later (Linux, MacOS, Windows, Android, etc)\n\n\niOS version \n9.3\n or later\n\n\n\n\nFirefox is \nnot\n supported.\n\n\nNeed help ? Found a bug ?\n\n\nHead over the \nissue tracker\n :)\n\n\nFree what ?\n\n\nOpen Stage Control is a \nfree software\n, as in \ngratis\n and \u2014 most importantly \u2014 \nlibre\n. It always will be. If you want to support the project financially, consider using liberapay or \nflattr\n :\n\n\n\n\n\n\n\n\n\n\nTable of contents\n\n\n\n\nGetting started\n\n\nUser interface\n\n\nEditing sessions\n\n\nWidgets reference:\n\n\nWidget properties\n\n\nContainers\n\n\nSliders\n\n\nPads\n\n\nButtons\n\n\nSwitchers\n\n\nPlots\n\n\nMatrices\n\n\nInputs\n\n\nMaths\n\n\n\n\n\n\nExtras:\n\n\nAdvanced property syntax\n\n\nCSS Tips\n\n\nTheming\n\n\nURL options\n\n\nRemote control\n\n\nCustom module\n\n\nMidi\n\n\n\n\n\n\nExamples\n\n\nCredits", 
             "title": "OSC Control Surface"
         }, 
         {
@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/#free-what", 
-            "text": "Open Stage Control is a  free software , as in  gratis  and \u2014 most importantly \u2014  libre . It always will be. If you want to support the project financially, consider using flattr :  https://flattr.com/@jean-emmanuel", 
+            "text": "Open Stage Control is a  free software , as in  gratis  and \u2014 most importantly \u2014  libre . It always will be. If you want to support the project financially, consider using liberapay or  flattr  :", 
             "title": "Free what ?"
         }, 
         {
@@ -1612,7 +1612,7 @@
         }, 
         {
             "location": "/credits/", 
-            "text": "License\n\n\nCopyleft \u00a9 Jean-Emmanuel Doucet @ \nAMMD\n 2018.\nThis program is a free software released under the \nGNU/GPL3\n license.\n\n\nDependencies\n\n\nOpen Stage Control relies on several other free softwares, including \nNode.js\n, \nElectron\n, \nosc.js\n, \nbabel\n, \nbrowserify\n, \nexorcist\n, \nexpress\n, \nnode-sass\n, \njQuery\n, \njQuery-UI\n, \nFont Awesome\n, \nstacktracejs\n, \nmathjs\n. A comprehensive and up-to-date list can be found by reading these \ntwo\n \nfiles\n.\n\n\nContributors\n\n\nhttps://github.com/jean-emmanuel/open-stage-control/graphs/contributors\n\n\n\n\n\n\n\n\n\n\nBrowserStack helps debugging Open Stage Control by providing a complete suite of browser emulators for Android, iOS and Windows, how awesome is that ? \nQuite very much indeed !", 
+            "text": "License\n\n\nCopyleft \u00a9 Jean-Emmanuel Doucet @ \nAMMD\n 2018.\nThis program is a free software released under the \nGNU/GPL3\n license.\n\n\nDependencies\n\n\nOpen Stage Control relies on several other free softwares, including \nNode.js\n, \nElectron\n, \nosc.js\n, \nbabel\n, \nbrowserify\n, \nexorcist\n, \nexpress\n, \nnode-sass\n, \njQuery\n, \njQuery-UI\n, \nFont Awesome\n, \nstacktracejs\n, \nmathjs\n. A comprehensive and up-to-date list can be found by reading these \ntwo\n \nfiles\n.\n\n\nContributors\n\n\nhttps://github.com/jean-emmanuel/open-stage-control/graphs/contributors\n\n\n\n\n\n\n\n\n\n\nBrowserStack supports Open Stage Control by providing a complete suite of browser emulators for Android, iOS and Windows.", 
             "title": "Credits"
         }, 
         {
@@ -1627,7 +1627,7 @@
         }, 
         {
             "location": "/credits/#contributors", 
-            "text": "https://github.com/jean-emmanuel/open-stage-control/graphs/contributors      BrowserStack helps debugging Open Stage Control by providing a complete suite of browser emulators for Android, iOS and Windows, how awesome is that ?  Quite very much indeed !", 
+            "text": "https://github.com/jean-emmanuel/open-stage-control/graphs/contributors      BrowserStack supports Open Stage Control by providing a complete suite of browser emulators for Android, iOS and Windows.", 
             "title": "Contributors"
         }
     ]
