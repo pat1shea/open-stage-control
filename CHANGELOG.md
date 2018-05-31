@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.32.0
+
+- main
+  - add tcp support
+
+## 0.31.0
+
+- bug fixes
+  - regression breaking multitouch widgets
+- widgets
+  - fader/knob/pad: right-click / long tap doesn't give focus to the input anymore
+
+## 0.30.4
+
+- bug fixes
+  - regression breaking touch traversing gestures
+  - clone widgets becomming unselectable for edition
+  - `preArgs` property still being coerced to an array
+
 ## 0.30.3
 
 - bug fixes
