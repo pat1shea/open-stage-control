@@ -1607,7 +1607,7 @@
         }, 
         {
             "location": "/credits/", 
-            "text": "License\n\n\nCopyleft \u00a9 Jean-Emmanuel Doucet @ \nAMMD\n 2018.\nThis program is a free software released under the \nGNU/GPL3\n license.\n\n\nDependencies\n\n\nOpen Stage Control relies on several other free softwares, including \nNode.js\n, \nElectron\n, \nosc.js\n, \nbabel\n, \nbrowserify\n, \nexorcist\n, \nexpress\n, \nnode-sass\n, \njQuery\n, \njQuery-UI\n, \nFont Awesome\n, \nstacktracejs\n, \nmathjs\n. A comprehensive and up-to-date list can be found by reading these \ntwo\n \nfiles\n.\n\n\nContributors\n\n\nhttps://github.com/jean-emmanuel/open-stage-control/graphs/contributors\n\n\n\n\n\n\n\n\n\n\nBrowserStack supports Open Stage Control by providing a complete suite of browser emulators for Android, iOS and Windows.", 
+            "text": "License\n\n\nCopyleft \u00a9 Jean-Emmanuel Doucet @ \nAMMD\n 2018.\nThis program is a free software released under the \nGNU/GPL3\n license.\n\n\nDependencies\n\n\nOpen Stage Control relies on several other free softwares, including \nNode.js\n, \nElectron\n, \nosc.js\n, \nbabel\n, \nbrowserify\n, \nexorcist\n, \nexpress\n, \nnode-sass\n, \njQuery\n, \njQuery-UI\n, \nFont Awesome\n, \nstacktracejs\n, \nmathjs\n. A comprehensive and up-to-date list can be found \nhere\n.\n\n\nContributors\n\n\nhttps://github.com/jean-emmanuel/open-stage-control/graphs/contributors\n\n\n\n\n\n\n\n\n\n\nBrowserStack supports Open Stage Control by providing a complete suite of browser emulators for Android, iOS and Windows.", 
             "title": "Credits"
         }, 
         {
@@ -1617,7 +1617,7 @@
         }, 
         {
             "location": "/credits/#dependencies", 
-            "text": "Open Stage Control relies on several other free softwares, including  Node.js ,  Electron ,  osc.js ,  babel ,  browserify ,  exorcist ,  express ,  node-sass ,  jQuery ,  jQuery-UI ,  Font Awesome ,  stacktracejs ,  mathjs . A comprehensive and up-to-date list can be found by reading these  two   files .", 
+            "text": "Open Stage Control relies on several other free softwares, including  Node.js ,  Electron ,  osc.js ,  babel ,  browserify ,  exorcist ,  express ,  node-sass ,  jQuery ,  jQuery-UI ,  Font Awesome ,  stacktracejs ,  mathjs . A comprehensive and up-to-date list can be found  here .", 
             "title": "Dependencies"
         }, 
         {
