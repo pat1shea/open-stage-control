@@ -808,7 +808,7 @@
 <p>MIDI support requires additional software to be installed on the server's system:</p>
 <ul>
 <li>python (2 / 3)</li>
-<li>python package <a href="https://pypi.python.org/pypi/rtmidi">rtmidi</a> (version 2.3.2, compiled with <code>--jack-midi</code> flag for JACK MIDI support)</li>
+<li>python package <a href="https://pypi.python.org/pypi/rtmidi">rtmidi</a> (version 2.3.2)</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Why an additionnal dependency ?</p>
@@ -823,7 +823,7 @@
 <p><em>Linux only:</em></p>
 <ul>
 <li><code>device_name:virtual</code>: creates a virtual midi device with one input port and one output port</li>
-<li><code>jack</code>: use JACK MIDI instead of ALSA (add as extra parameter)</li>
+<li><code>jack</code>: use JACK MIDI instead of ALSA (add as extra parameter). <code>rtmidi</code> must be compiled with <code>--jack-midi</code> flag for this to work.</li>
 </ul>
 <h2 id="widget-settings">Widget settings<a class="headerlink" href="#widget-settings" title="Permanent link">&para;</a></h2>
 <p>In order to send MIDI messages, a widget must have at least one <code>target</code> formatted as follows:</p>

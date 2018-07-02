@@ -1077,13 +1077,43 @@
         }, 
         {
             "location": "/widgets/matrices/", 
-            "text": "Matrices\n\n\nMatrices are special containers that only contain one type of widget. All contained widgets will be traversed by single dragging gestures.\n\n\nMultifader\n\n\nMultifader creates a row of vertical faders that respond to the same gestures.\n\n\n{\n\n    \ntype\n:\nmultifader\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nstrips\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n2\n\n\nusage: number of faders in the row, each fader will inherit its parent's properties and the following ones (where \ni\n is the fader's index in the row)\n\n\nid\n: same as the widget's with \n/i\n appended to it\n\n\nlabel\n: \ni\n\n\naddress\n: see \nsplit\n\n\n\n\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: first faders's index\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: enable traversing gestures\n\n\n\n\nsplit\n\n\n\n\ntype: \nboolean|string\n\n\ndefault: \nfalse\n\n\nusage:\n\n\ntrue\n: the widget's index will be appended to the matrice's osc \naddress\n\n\nfalse\n: it will be prepended to the widget's \npreArgs\n\n\nstring\n: will be used to define the widgets' addresses, replacing dollar signs (\n$\n) with  their respective index (to insert the actual dollar sign, it must be escaped with a backslash (\n\\$\n)).\n\n\n\n\n\n\n\n\noptions\n\n\n\n\nsee fader's \noptions\n\n\n\n\nMultitoggle\n\n\n{\n\n    \ntype\n:\nmultitoggle\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nmatrix\n\n\n\n\ntype: \narray\n\n\ndefault: \n[2,2]\n\n\nusage: defines the number of columns and and rows. Each cell will contain a toggle button that will inherit its parent's properties and the following ones (where \ni\n is the fader's index in the row)\n\n\nid\n: same as the widget's with \n/i\n appended to it\n\n\nlabel\n: \ni\n\n\naddress\n: see \nsplit\n\n\n\n\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: first toggle's index\n\n\n\n\nspacing\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: adds space between widgets\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: enable traversing gestures\n\n\n\n\nsplit\n\n\n\n\ntype: \nboolean|string\n\n\ndefault: \nfalse\n\n\nusage:\n\n\ntrue\n: the widget's index will be appended to the matrice's osc \naddress\n\n\nfalse\n: it will be prepended to the widget's \npreArgs\n\n\nstring\n: will be used to define the widgets' addresses, replacing dollar signs (\n$\n) with  their respective index (to insert the actual dollar sign, it must be escaped with a backslash (\n\\$\n)).\n\n\n\n\n\n\n\n\noptions\n\n\n\n\nsee toggle's \noptions\n\n\n\n\nMultipush\n\n\n{\n\n    \ntype\n:\nmultipush\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nmatrix\n\n\n\n\ntype: \narray\n\n\ndefault: \n[2,2]\n\n\nusage: defines the number of columns and and rows. Each cell will contain a push button that will inherit its parent's properties and the following ones (where \ni\n is the fader's index in the row)\n\n\nid\n: same as the widget's with \n/i\n appended to it\n\n\nlabel\n: \ni\n\n\naddress\n: see \nsplit\n\n\n\n\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: first push's index\n\n\n\n\nspacing\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: adds space between widgets\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: enable traversing gestures\n\n\n\n\nsplit\n\n\n\n\ntype: \nboolean|string\n\n\ndefault: \nfalse\n\n\nusage:\n\n\ntrue\n: the widget's index will be appended to the matrice's osc \naddress\n\n\nfalse\n: it will be prepended to the widget's \npreArgs\n\n\nstring\n: will be used to define the widgets' addresses, replacing dollar signs (\n$\n) with  their respective index (to insert the actual dollar sign, it must be escaped with a backslash (\n\\$\n)).\n\n\n\n\n\n\n\n\noptions\n\n\n\n\nsee push's \noptions\n\n\n\n\nKeyboard\n\n\nThis one works pretty much like the multipush, excepts it looks like a piano keyboard.\n\n\n{\n\n    \ntype\n:\nkeyboard\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nkeys\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n24\n\n\nusage: defines the number keys\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n60\n\n\nusage: MIDI note number to start with (default is C4)\n\n\n\n\n\n\nStandard keyboards settings are:\n25 keys - start 48\n49 keys - start 36\n61 keys - start 36\n88 keys - start 21\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: enable traversing gestures\n\n\n\n\nsplit\n\n\n\n\ntype: \nboolean|string\n\n\ndefault: \nfalse\n\n\nusage:\n\n\ntrue\n: the widget's index will be appended to the matrice's osc \naddress\n\n\nfalse\n: it will be prepended to the widget's \npreArgs\n\n\nstring\n: will be used to define the widgets' addresses, replacing dollar signs (\n$\n) with  their respective index (to insert the actual dollar sign, it must be escaped with a backslash (\n\\$\n)).\n\n\n\n\n\n\n\n\noptions\n\n\n\n\nsee push's \noptions\n\n\n\n\ncss\n\n\n--color-white\n:\ncolor\n;\n \n/* white keys color */\n\n\n--color-black\n:\ncolor\n;\n \n/* black keys color */", 
+            "text": "Matrices\n\n\nMatrices are special containers that only contain one type of widget. All contained widgets will be traversed by single dragging gestures.\n\n\nMatrix\n\n\nCreates grid of widgets of a given type\n\n\n{\n\n    \ntype\n:\nmatrix\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nwidgetType\n\n\n\n\ntype: \nstring\n\n\ndefault: \ntoggle\n\n\nusage: set the type of the widgets in the matrix\n\n\n\n\nmatrix\n\n\n\n\ntype: \narray\n\n\ndefault: \n[2,2]\n\n\nusage: defines the number of columns and and rows in the matrix\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: first widget's index\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: set to false to disable traversing gestures\n\n\n\n\nprops\n\n\n\n\ntype: \nobject\n\n\ndefault: \n{}\n\n\nusage: define a set of property to override the widgets' defaults. \nFormulas\n in this field are resolved with an extra variable \n$\n representing each widget's index\n\n\n\n\nMultifader\n\n\nMultifader creates a row of vertical faders that respond to the same gestures.\n\n\n{\n\n    \ntype\n:\nmultifader\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nstrips\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n2\n\n\nusage: number of faders in the row, each fader will inherit its parent's properties and the following ones (where \ni\n is the fader's index in the row)\n\n\nid\n: same as the widget's with \n/i\n appended to it\n\n\nlabel\n: \ni\n\n\naddress\n: see \nsplit\n\n\n\n\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: first faders's index\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: set to false to disable traversing gestures\n\n\n\n\nborders\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: set to false to disable widgets borders\n\n\n\n\nsplit\n\n\n\n\ntype: \nboolean|string\n\n\ndefault: \nfalse\n\n\nusage:\n\n\ntrue\n: the widget's index will be appended to the matrice's osc \naddress\n\n\nfalse\n: it will be prepended to the widget's \npreArgs\n\n\nstring\n: will be used to define the widgets' addresses, replacing dollar signs (\n$\n) with  their respective index (to insert the actual dollar sign, it must be escaped with a backslash (\n\\$\n)).\n\n\n\n\n\n\n\n\noptions\n\n\n\n\nsee fader's \noptions\n\n\n\n\nMultitoggle\n\n\n{\n\n    \ntype\n:\nmultitoggle\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nmatrix\n\n\n\n\ntype: \narray\n\n\ndefault: \n[2,2]\n\n\nusage: defines the number of columns and and rows. Each cell will contain a toggle button that will inherit its parent's properties and the following ones (where \ni\n is the fader's index in the row)\n\n\nid\n: same as the widget's with \n/i\n appended to it\n\n\nlabel\n: \ni\n\n\naddress\n: see \nsplit\n\n\n\n\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: first toggle's index\n\n\n\n\nspacing\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: adds space between widgets\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: set to false to disable traversing gestures\n\n\n\n\nsplit\n\n\n\n\ntype: \nboolean|string\n\n\ndefault: \nfalse\n\n\nusage:\n\n\ntrue\n: the widget's index will be appended to the matrice's osc \naddress\n\n\nfalse\n: it will be prepended to the widget's \npreArgs\n\n\nstring\n: will be used to define the widgets' addresses, replacing dollar signs (\n$\n) with  their respective index (to insert the actual dollar sign, it must be escaped with a backslash (\n\\$\n)).\n\n\n\n\n\n\n\n\noptions\n\n\n\n\nsee toggle's \noptions\n\n\n\n\nMultipush\n\n\n{\n\n    \ntype\n:\nmultipush\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nmatrix\n\n\n\n\ntype: \narray\n\n\ndefault: \n[2,2]\n\n\nusage: defines the number of columns and and rows. Each cell will contain a push button that will inherit its parent's properties and the following ones (where \ni\n is the fader's index in the row)\n\n\nid\n: same as the widget's with \n/i\n appended to it\n\n\nlabel\n: \ni\n\n\naddress\n: see \nsplit\n\n\n\n\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: first push's index\n\n\n\n\nspacing\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n0\n\n\nusage: adds space between widgets\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: set to false to disable traversing gestures\n\n\n\n\nsplit\n\n\n\n\ntype: \nboolean|string\n\n\ndefault: \nfalse\n\n\nusage:\n\n\ntrue\n: the widget's index will be appended to the matrice's osc \naddress\n\n\nfalse\n: it will be prepended to the widget's \npreArgs\n\n\nstring\n: will be used to define the widgets' addresses, replacing dollar signs (\n$\n) with  their respective index (to insert the actual dollar sign, it must be escaped with a backslash (\n\\$\n)).\n\n\n\n\n\n\n\n\noptions\n\n\n\n\nsee push's \noptions\n\n\n\n\nKeyboard\n\n\nThis one works pretty much like the multipush, excepts it looks like a piano keyboard.\n\n\n{\n\n    \ntype\n:\nkeyboard\n,\n\n    \n// etc\n\n\n}\n\n\n\n\n\nkeys\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n24\n\n\nusage: defines the number keys\n\n\n\n\nstart\n\n\n\n\ntype: \ninteger\n\n\ndefault: \n60\n\n\nusage: MIDI note number to start with (default is C4)\n\n\n\n\n\n\nStandard keyboards settings are:\n25 keys - start 48\n49 keys - start 36\n61 keys - start 36\n88 keys - start 21\n\n\n\n\ntraversing\n\n\n\n\ntype: \nboolean\n\n\ndefault: \ntrue\n\n\nusage: set to false to disable traversing gestures\n\n\n\n\nsplit\n\n\n\n\ntype: \nboolean|string\n\n\ndefault: \nfalse\n\n\nusage:\n\n\ntrue\n: the widget's index will be appended to the matrice's osc \naddress\n\n\nfalse\n: it will be prepended to the widget's \npreArgs\n\n\nstring\n: will be used to define the widgets' addresses, replacing dollar signs (\n$\n) with  their respective index (to insert the actual dollar sign, it must be escaped with a backslash (\n\\$\n)).\n\n\n\n\n\n\n\n\noptions\n\n\n\n\nsee push's \noptions\n\n\n\n\ncss\n\n\n--color-white\n:\ncolor\n;\n \n/* white keys color */\n\n\n--color-black\n:\ncolor\n;\n \n/* black keys color */", 
             "title": "Matrices"
         }, 
         {
             "location": "/widgets/matrices/#matrices", 
             "text": "Matrices are special containers that only contain one type of widget. All contained widgets will be traversed by single dragging gestures.", 
             "title": "Matrices"
+        }, 
+        {
+            "location": "/widgets/matrices/#matrix", 
+            "text": "Creates grid of widgets of a given type  { \n     type : matrix , \n     // etc  }", 
+            "title": "Matrix"
+        }, 
+        {
+            "location": "/widgets/matrices/#widgettype", 
+            "text": "type:  string  default:  toggle  usage: set the type of the widgets in the matrix", 
+            "title": "widgetType"
+        }, 
+        {
+            "location": "/widgets/matrices/#matrix_1", 
+            "text": "type:  array  default:  [2,2]  usage: defines the number of columns and and rows in the matrix", 
+            "title": "matrix"
+        }, 
+        {
+            "location": "/widgets/matrices/#start", 
+            "text": "type:  integer  default:  0  usage: first widget's index", 
+            "title": "start"
+        }, 
+        {
+            "location": "/widgets/matrices/#traversing", 
+            "text": "type:  boolean  default:  true  usage: set to false to disable traversing gestures", 
+            "title": "traversing"
+        }, 
+        {
+            "location": "/widgets/matrices/#props", 
+            "text": "type:  object  default:  {}  usage: define a set of property to override the widgets' defaults.  Formulas  in this field are resolved with an extra variable  $  representing each widget's index", 
+            "title": "props"
         }, 
         {
             "location": "/widgets/matrices/#multifader", 
@@ -1096,14 +1126,19 @@
             "title": "strips"
         }, 
         {
-            "location": "/widgets/matrices/#start", 
+            "location": "/widgets/matrices/#start_1", 
             "text": "type:  integer  default:  0  usage: first faders's index", 
             "title": "start"
         }, 
         {
-            "location": "/widgets/matrices/#traversing", 
-            "text": "type:  boolean  default:  true  usage: enable traversing gestures", 
+            "location": "/widgets/matrices/#traversing_1", 
+            "text": "type:  boolean  default:  true  usage: set to false to disable traversing gestures", 
             "title": "traversing"
+        }, 
+        {
+            "location": "/widgets/matrices/#borders", 
+            "text": "type:  boolean  default:  true  usage: set to false to disable widgets borders", 
+            "title": "borders"
         }, 
         {
             "location": "/widgets/matrices/#split", 
@@ -1121,12 +1156,12 @@
             "title": "Multitoggle"
         }, 
         {
-            "location": "/widgets/matrices/#matrix", 
+            "location": "/widgets/matrices/#matrix_2", 
             "text": "type:  array  default:  [2,2]  usage: defines the number of columns and and rows. Each cell will contain a toggle button that will inherit its parent's properties and the following ones (where  i  is the fader's index in the row)  id : same as the widget's with  /i  appended to it  label :  i  address : see  split", 
             "title": "matrix"
         }, 
         {
-            "location": "/widgets/matrices/#start_1", 
+            "location": "/widgets/matrices/#start_2", 
             "text": "type:  integer  default:  0  usage: first toggle's index", 
             "title": "start"
         }, 
@@ -1136,8 +1171,8 @@
             "title": "spacing"
         }, 
         {
-            "location": "/widgets/matrices/#traversing_1", 
-            "text": "type:  boolean  default:  true  usage: enable traversing gestures", 
+            "location": "/widgets/matrices/#traversing_2", 
+            "text": "type:  boolean  default:  true  usage: set to false to disable traversing gestures", 
             "title": "traversing"
         }, 
         {
@@ -1156,12 +1191,12 @@
             "title": "Multipush"
         }, 
         {
-            "location": "/widgets/matrices/#matrix_1", 
+            "location": "/widgets/matrices/#matrix_3", 
             "text": "type:  array  default:  [2,2]  usage: defines the number of columns and and rows. Each cell will contain a push button that will inherit its parent's properties and the following ones (where  i  is the fader's index in the row)  id : same as the widget's with  /i  appended to it  label :  i  address : see  split", 
             "title": "matrix"
         }, 
         {
-            "location": "/widgets/matrices/#start_2", 
+            "location": "/widgets/matrices/#start_3", 
             "text": "type:  integer  default:  0  usage: first push's index", 
             "title": "start"
         }, 
@@ -1171,8 +1206,8 @@
             "title": "spacing"
         }, 
         {
-            "location": "/widgets/matrices/#traversing_2", 
-            "text": "type:  boolean  default:  true  usage: enable traversing gestures", 
+            "location": "/widgets/matrices/#traversing_3", 
+            "text": "type:  boolean  default:  true  usage: set to false to disable traversing gestures", 
             "title": "traversing"
         }, 
         {
@@ -1196,13 +1231,13 @@
             "title": "keys"
         }, 
         {
-            "location": "/widgets/matrices/#start_3", 
+            "location": "/widgets/matrices/#start_4", 
             "text": "type:  integer  default:  60  usage: MIDI note number to start with (default is C4)    Standard keyboards settings are:\n25 keys - start 48\n49 keys - start 36\n61 keys - start 36\n88 keys - start 21", 
             "title": "start"
         }, 
         {
-            "location": "/widgets/matrices/#traversing_3", 
-            "text": "type:  boolean  default:  true  usage: enable traversing gestures", 
+            "location": "/widgets/matrices/#traversing_4", 
+            "text": "type:  boolean  default:  true  usage: set to false to disable traversing gestures", 
             "title": "traversing"
         }, 
         {
@@ -1522,7 +1557,7 @@
         }, 
         {
             "location": "/extras/midi/", 
-            "text": "Sending / Receiving MIDI\n\n\nOpen Stage Control can send and receive MIDI messages.\n\n\nRequirements\n\n\nMIDI support requires additional software to be installed on the server's system:\n\n\n\n\npython (2 / 3)\n\n\npython package \nrtmidi\n (version 2.3.2, compiled with \n--jack-midi\n flag for JACK MIDI support)\n\n\n\n\n\n\nWhy an additionnal dependency ?\n\n\nProviding cross-platform MIDI support is not trivial, as it requires OS-specific compilation that cannot be automated within Open Stage Control's current packaging workflow. Using a python addon seems to be the best compromise so far : the core app remains easy to build, and the extra dependency is easy to install.\n\n\n\n\nSetup\n\n\nWhen running the app, the \n-m / --midi\n switch must be set; it accepts the following options (separated by spaces):\n\n\n\n\nlist\n: prints the available MIDI ports to the console; numbers in the first column may be used for \ninput\n/\noutput\n definition below\n\n\ndevice_name:input,output\n: connect to midi ports \ninput\n and \noutput\n; osc messages sent to target \nmidi:device_name\n will be processed as midi events; Multiple devices can be declared\n\n\n\n\nLinux only:\n\n\n\n\ndevice_name:virtual\n: creates a virtual midi device with one input port and one output port\n\n\njack\n: use JACK MIDI instead of ALSA (add as extra parameter)\n\n\n\n\nWidget settings\n\n\nIn order to send MIDI messages, a widget must have at least one \ntarget\n formatted as follows:\n\n\nmidi:device_name\n (where \ndevice_name\n is one of the declared midi devices)\n\n\nSupported MIDI messages\n\n\n\n\nDefine static argument values using the \npreArgs\n option in order to complete the respective MIDI message.\n\n\n\n\n/note channel note velocity\n\n\nNoteOn event or noteOff if velocity equals \n0\n.\n\n\n\n\nchannel\n: integer between 1 and 16\n\n\nnote\n: integer between 0 and 127\n\n\nvelocity\n: integer between 0 and 127\n\n\n\n\nExample:\n\n\nA push button might be configured as follows in order to send a MIDI note whose velocity is defined by the button's on/off value:\n\n\n\n\naddress\n: /note\n\n\npreArgs\n: [1, 60] (for MIDI channel 1, and note 60 / C3)\n\n\non\n: 100 (for noteOn velocity of 100 on button push)\n\n\noff\n: 0 (to send a noteOff on button release)\n\n\ntarget\n: [\"midi:device_name\"] (where device_name is one of the declared midi devices defined during \nsetup\n)\n\n\n\n\n/control channel cc value\n\n\nControl change event.\n\n\n\n\nchannel\n: integer between 1 and 16\n\n\ncc\n: integer between 0 and 127\n\n\nvalue\n: integer between 0 and 127\n\n\n\n\nExample:\n\n\nA fader might be configured as follows in order to send a MIDI control message (a volume control in this example):\n\n\n\n\naddress\n: /control\n\n\npre-args\n: [1, 7] (MIDI channel 1, control number 7 generally used as volume control)\n\n\nrange\n: {\"min\": 0, \"max\": 127} (MIDI values are encoded in this range)\n\n\ntarget\n: [\"midi:device_name\"]\n\n\n\n\n/program channel program\n\n\nProgram change event.\n\n\n\n\nchannel\n: integer between 1 and 16\n\n\nprogram\n: integer between 0 and 127\n\n\n\n\n/pitch channel pitch\n\n\nPitchWheel event.\n\n\n\n\nchannel\n: integer between 1 and 16\n\n\npitch\n: integer between 0 and 16383\n\n\n\n\n/sysex msg v1 .. vN\n\n\nSystem exclusive message.\n\n\n\n\nmsg\n: hexadecimal sysex data string of the form \nf0 ... f7\n. You may include placeholders of the form \nnn\n which will be replaced by \nv1, .., vN\n respectively.\n\n\nv1, .., vN\n: values encoded as hexadecimal data strings to include in \nmsg\n. Most probably, you will need to sepcify a \ncustom module\n in order to convert numeric widget values into the required hexadecimal format. In general, this conversion will be different for each manufacturer / device.\n\n\n\n\nFor a very simple example, refer to session 'sysex.json' found in the application's sub folder 'resources/app/examples/'. Please remember to adjust the button's \ntarget\n to the \ndevice_name\n used in your MIDI setup.", 
+            "text": "Sending / Receiving MIDI\n\n\nOpen Stage Control can send and receive MIDI messages.\n\n\nRequirements\n\n\nMIDI support requires additional software to be installed on the server's system:\n\n\n\n\npython (2 / 3)\n\n\npython package \nrtmidi\n (version 2.3.2)\n\n\n\n\n\n\nWhy an additionnal dependency ?\n\n\nProviding cross-platform MIDI support is not trivial, as it requires OS-specific compilation that cannot be automated within Open Stage Control's current packaging workflow. Using a python addon seems to be the best compromise so far : the core app remains easy to build, and the extra dependency is easy to install.\n\n\n\n\nSetup\n\n\nWhen running the app, the \n-m / --midi\n switch must be set; it accepts the following options (separated by spaces):\n\n\n\n\nlist\n: prints the available MIDI ports to the console; numbers in the first column may be used for \ninput\n/\noutput\n definition below\n\n\ndevice_name:input,output\n: connect to midi ports \ninput\n and \noutput\n; osc messages sent to target \nmidi:device_name\n will be processed as midi events; Multiple devices can be declared\n\n\n\n\nLinux only:\n\n\n\n\ndevice_name:virtual\n: creates a virtual midi device with one input port and one output port\n\n\njack\n: use JACK MIDI instead of ALSA (add as extra parameter). \nrtmidi\n must be compiled with \n--jack-midi\n flag for this to work.\n\n\n\n\nWidget settings\n\n\nIn order to send MIDI messages, a widget must have at least one \ntarget\n formatted as follows:\n\n\nmidi:device_name\n (where \ndevice_name\n is one of the declared midi devices)\n\n\nSupported MIDI messages\n\n\n\n\nDefine static argument values using the \npreArgs\n option in order to complete the respective MIDI message.\n\n\n\n\n/note channel note velocity\n\n\nNoteOn event or noteOff if velocity equals \n0\n.\n\n\n\n\nchannel\n: integer between 1 and 16\n\n\nnote\n: integer between 0 and 127\n\n\nvelocity\n: integer between 0 and 127\n\n\n\n\nExample:\n\n\nA push button might be configured as follows in order to send a MIDI note whose velocity is defined by the button's on/off value:\n\n\n\n\naddress\n: /note\n\n\npreArgs\n: [1, 60] (for MIDI channel 1, and note 60 / C3)\n\n\non\n: 100 (for noteOn velocity of 100 on button push)\n\n\noff\n: 0 (to send a noteOff on button release)\n\n\ntarget\n: [\"midi:device_name\"] (where device_name is one of the declared midi devices defined during \nsetup\n)\n\n\n\n\n/control channel cc value\n\n\nControl change event.\n\n\n\n\nchannel\n: integer between 1 and 16\n\n\ncc\n: integer between 0 and 127\n\n\nvalue\n: integer between 0 and 127\n\n\n\n\nExample:\n\n\nA fader might be configured as follows in order to send a MIDI control message (a volume control in this example):\n\n\n\n\naddress\n: /control\n\n\npre-args\n: [1, 7] (MIDI channel 1, control number 7 generally used as volume control)\n\n\nrange\n: {\"min\": 0, \"max\": 127} (MIDI values are encoded in this range)\n\n\ntarget\n: [\"midi:device_name\"]\n\n\n\n\n/program channel program\n\n\nProgram change event.\n\n\n\n\nchannel\n: integer between 1 and 16\n\n\nprogram\n: integer between 0 and 127\n\n\n\n\n/pitch channel pitch\n\n\nPitchWheel event.\n\n\n\n\nchannel\n: integer between 1 and 16\n\n\npitch\n: integer between 0 and 16383\n\n\n\n\n/sysex msg v1 .. vN\n\n\nSystem exclusive message.\n\n\n\n\nmsg\n: hexadecimal sysex data string of the form \nf0 ... f7\n. You may include placeholders of the form \nnn\n which will be replaced by \nv1, .., vN\n respectively.\n\n\nv1, .., vN\n: values encoded as hexadecimal data strings to include in \nmsg\n. Most probably, you will need to sepcify a \ncustom module\n in order to convert numeric widget values into the required hexadecimal format. In general, this conversion will be different for each manufacturer / device.\n\n\n\n\nFor a very simple example, refer to session 'sysex.json' found in the application's sub folder 'resources/app/examples/'. Please remember to adjust the button's \ntarget\n to the \ndevice_name\n used in your MIDI setup.", 
             "title": "Midi"
         }, 
         {
@@ -1532,12 +1567,12 @@
         }, 
         {
             "location": "/extras/midi/#requirements", 
-            "text": "MIDI support requires additional software to be installed on the server's system:   python (2 / 3)  python package  rtmidi  (version 2.3.2, compiled with  --jack-midi  flag for JACK MIDI support)    Why an additionnal dependency ?  Providing cross-platform MIDI support is not trivial, as it requires OS-specific compilation that cannot be automated within Open Stage Control's current packaging workflow. Using a python addon seems to be the best compromise so far : the core app remains easy to build, and the extra dependency is easy to install.", 
+            "text": "MIDI support requires additional software to be installed on the server's system:   python (2 / 3)  python package  rtmidi  (version 2.3.2)    Why an additionnal dependency ?  Providing cross-platform MIDI support is not trivial, as it requires OS-specific compilation that cannot be automated within Open Stage Control's current packaging workflow. Using a python addon seems to be the best compromise so far : the core app remains easy to build, and the extra dependency is easy to install.", 
             "title": "Requirements"
         }, 
         {
             "location": "/extras/midi/#setup", 
-            "text": "When running the app, the  -m / --midi  switch must be set; it accepts the following options (separated by spaces):   list : prints the available MIDI ports to the console; numbers in the first column may be used for  input / output  definition below  device_name:input,output : connect to midi ports  input  and  output ; osc messages sent to target  midi:device_name  will be processed as midi events; Multiple devices can be declared   Linux only:   device_name:virtual : creates a virtual midi device with one input port and one output port  jack : use JACK MIDI instead of ALSA (add as extra parameter)", 
+            "text": "When running the app, the  -m / --midi  switch must be set; it accepts the following options (separated by spaces):   list : prints the available MIDI ports to the console; numbers in the first column may be used for  input / output  definition below  device_name:input,output : connect to midi ports  input  and  output ; osc messages sent to target  midi:device_name  will be processed as midi events; Multiple devices can be declared   Linux only:   device_name:virtual : creates a virtual midi device with one input port and one output port  jack : use JACK MIDI instead of ALSA (add as extra parameter).  rtmidi  must be compiled with  --jack-midi  flag for this to work.", 
             "title": "Setup"
         }, 
         {
