@@ -837,6 +837,8 @@ Will return <code>1</code> at first and listen for osc messages on address <code
 <li><code>unpack(x)</code>: remove an array's brackets (<code>unpack([1,2])</code> returns <code>&quot;1, 2&quot;</code>)</li>
 <li><code>pad(x, padding)</code>: add leading zeros if the length the integer part of <code>x</code> is smaller than <code>padding</code> (<code>pad(1,2)</code> returns <code>&quot;01&quot;</code>)</li>
 <li><code>length(x)</code>: returns the length of an array or string</li>
+<li><code>keys(x)</code>: returns an array of a given object's property names (from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys">MDN</a>)</li>
+<li><code>values(x)</code>: returns an array of a given object's own enumerable property values (from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values">MDN</a>)</li>
 </ul>
 <div class="admonition tip">
 <p>A single widget property can contain multiple formulas. Variables and functions declared in a formula are available to subsequent formulas in the same property definition.</p>
