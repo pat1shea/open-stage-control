@@ -996,7 +996,7 @@
 <li>default: <code>{&quot;Value 1&quot;:1,&quot;Value 2&quot;:2}</code></li>
 <li>usage:<ul>
 <li><code>array</code> of possible values to switch between : <code>[1,2,3]</code></li>
-<li><code>object</code> of <code>&quot;label&quot;:value</code> pairs</li>
+<li><code>object</code> of <code>&quot;label&quot;:value</code> pairs. Numeric labels must be prepended or appended with a white space (or any other non-numeric character) otherwise the order of the values won't be kept.</li>
 </ul>
 </li>
 </ul>
@@ -1019,8 +1019,8 @@
 <li>default: <code>{&quot;Value 1&quot;:1,&quot;Value 2&quot;:2}</code></li>
 <li>usage:<ul>
 <li><code>array</code> of possible values to switch between : <code>[1,2,3]</code></li>
-<li><code>object</code> of <code>&quot;label&quot;:value</code> pairs</li>
-<li>an empty option will always be prepended to <code>values</code> (sends an osc message without any value)</li>
+<li><code>object</code> of <code>&quot;label&quot;:value</code> pairs. Numeric labels must be prepended or appended with a white space (or any other non-numeric character) otherwise the order of the values won't be kept.</li>
+<li>an empty option will always be prepended to <code>values</code> (sends an osc message without any value); it can be hidden by adding <code>option:first-child{display:none}</code> to the widget's <code>css</code></li>
 </ul>
 </li>
 </ul>
