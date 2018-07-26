@@ -688,6 +688,7 @@
 <li><code>clearTimeout</code>: <code>function(timeout)</code></li>
 <li><code>setInterval</code>: <code>function(function, delay)</code></li>
 <li><code>clearInterval</code>: <code>function(interval)</code></li>
+<li><code>settings.read</code>: <code>function(name)</code>, see <a href="https://github.com/jean-emmanuel/open-stage-control/blob/master/app/main/settings.js#L125-L162">settings.js</a> for available options</li>
 <li><code>app</code>: an <a href="https://nodejs.org/api/events.html#events_class_eventemitter">event emitter</a> for monitoring the events sent by the different clients. Event names can be found in <a href="https://github.com/jean-emmanuel/open-stage-control/blob/master/app/main/callbacks.js">callbacks.js</a>, callbacks are called with 2 arguments: <code>data</code> (object) and <code>clientId</code> (string)</li>
 </ul>
 <p><code>sendOsc</code> and <code>receiveOsc</code> expect arguments formatted as follow:</p>
