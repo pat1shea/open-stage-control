@@ -902,6 +902,14 @@ npm install
 npm run build
 </pre></div>
 
+<div class="admonition note">
+<p class="admonition-title">Updating from sources</p>
+<div class="codehilite"><pre><span></span>git pull
+npm install
+npm run build
+</pre></div>
+
+</div>
 <p><strong>3. Run !</strong></p>
 <div class="codehilite"><pre><span></span>npm start <span class="o">[</span> -- options<span class="o">]</span>
 </pre></div>
@@ -929,6 +937,9 @@ npm install
 <span class="nb">export</span> <span class="nv">ARCH</span><span class="o">=</span>TARGET_ARCH
 
 npm run package
+
+<span class="c1"># For raspberry-pi / armv7l, run this instead</span>
+npm run package-rpi
 
 <span class="c1"># Do one of the following if you want a deb package for debian/ubuntu</span>
 npm run deb32
