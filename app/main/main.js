@@ -25,6 +25,10 @@ var start = function(readyApp) {
 
         server.bindCallbacks(callbacks)
 
+        server.ipc.on('sessionOpen', function(data, clientId) {
+            console.log(`[START] Client ${clientId} is opening session file ${data.path}`)
+        })
+        
         serverStarted = true
         process.on('exit',()=>{
             if (osc.midi) osc.midi.stop()

@@ -139,7 +139,6 @@ class OscServer {
 
     }
 
-
     oscInFilter(data){
         if (this.customModule.oscInFilter) {
             return this.customModule.oscInFilter(data)
@@ -197,7 +196,7 @@ class OscServer {
         if (this.customModule.init) {
             this.customModule.init()
         }
-
+        
     }
 
 
@@ -209,6 +208,16 @@ oscServer.init()
 
 module.exports = {
 
+    sessionOpen: function(data,clientId) {
+        if (oscServer.customModule.sessionOpen) {
+            oscServer.customModule.sessionOpen(data,clientId)
+        }
+    },
+    sessionOpened: function(data,clientId) {
+        if (oscServer.customModule.sessionOpened) {
+            oscServer.customModule.sessionOpened(data,clientId)
+        }
+    },
     send: function(host,port,address,args,precision) {
 
         var message = []

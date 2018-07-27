@@ -125,6 +125,9 @@ module.exports =  {
 
             }
 
+            osc.sessionOpen(data,clientId)
+                
+
         } else {
 
             ipc.send('error', `Invalid session file (${error})`)
@@ -134,6 +137,7 @@ module.exports =  {
 
     sessionOpened: function(data, clientId) {
         ipc.send('stateSend', null, null, clientId)
+        osc.sessionOpened(data,clientId)
     },
 
     savingSession: function(data, clientId) {
