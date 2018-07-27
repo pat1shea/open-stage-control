@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.34.2
+
+- bug fixes
+  - matrices: spacing issue when wrapped in strips
+
+## 0.34.1
+
+- bug fixes
+  - switch: display object-values properly when `showValues` is set to `true`
+  - prevent non-dynamic properties updates from breaking an osc sending event chain
+- deprecations
+  - `formula` has been removed from the editor's context menu
+- custom module
+  - expose `app` to the custom module's scope: an event emitter for monitoring the events sent by the different clients
+- misc
+  - fixed rpi build
+
 ## 0.33.3
 
 - bug fixes
