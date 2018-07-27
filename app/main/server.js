@@ -8,6 +8,7 @@ var express     = require('express')(),
     theme       = require('./theme').init(),
     zeroconf = require('./zeroconf'),
     appAddresses = settings.read('appAddresses'),
+    osc = {},
     clients = {}
 
 express.get('/', function(req, res){
@@ -45,6 +46,9 @@ var bindCallbacks = function(callbacks) {
 
         for (let name in callbacks) {
             client.on(name, (data)=>{
+                if (osc.customModule) {
+                    osc.customModuleEventEmitter.emit(name, data, client.id)
+                }
                 callbacks[name](data, client.id)
             })
         }
@@ -66,3 +70,5 @@ module.exports =  {
     bindCallbacks:bindCallbacks,
     clients:clients
 }
+
+osc = require('./osc').server

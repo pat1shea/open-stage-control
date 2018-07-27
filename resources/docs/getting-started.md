@@ -80,6 +80,13 @@ npm install
 npm run build
 ```
 
+!!! note "Updating from sources"
+    ```bash
+    git pull
+    npm install
+    npm run build
+    ```
+
 **3. Run !**
 
 ```bash
@@ -113,6 +120,9 @@ export PLATFORM=TARGET_PLATFORM
 export ARCH=TARGET_ARCH
 
 npm run package
+
+# For raspberry-pi / armv7l, run this instead
+npm run package-rpi
 
 # Do one of the following if you want a deb package for debian/ubuntu
 npm run deb32
